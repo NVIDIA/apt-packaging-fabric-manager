@@ -1,0 +1,17 @@
+Source: fabricmanager
+Maintainer: cudatools <cudatools@nvidia.com>
+Section: multiverse/devel
+Priority: optional
+Standards-Version: 3.8.0
+
+Package: nvidia-fabricmanager
+Architecture: amd64
+Depends: ${misc:Depends}, libc6 (>= 2.2.1)
+Description: Fabric Manager for NVSwitch based systems.
+ Fabric Manager for NVIDIA NVSwitch based systems.
+
+Package: nvidia-fabricmanager-dev
+Architecture: amd64
+Depends: ${misc:Depends}
+Description: Fabric Manager API headers and associated library
+ Fabric Manager API headers and associated library

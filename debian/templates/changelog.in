@@ -1,0 +1,5 @@
+fabricmanager (#VERSION#-#REVISION#) stable; urgency=low
+
+  * Automatic Debian package build
+
+ -- cudatools <cudatools@nvidia.com>  #TIMESTAMP#

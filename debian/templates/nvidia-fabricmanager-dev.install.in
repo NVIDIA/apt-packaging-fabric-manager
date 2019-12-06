@@ -1,0 +1,4 @@
+libnvfm.so.1    #DEBLIBINSTDIR#
+
+nv_fm_agent.h   /usr/include
+nv_fm_types.h   /usr/include
