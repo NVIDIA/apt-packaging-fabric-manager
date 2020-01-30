@@ -6,7 +6,7 @@ Standards-Version: 3.8.0
 
 Package: nvidia-fabricmanager
 Architecture: amd64
-Depends: ${misc:Depends}, libc6 (>= 2.2.1)
+Depends: ${misc:Depends}, libc6 (>= 2.2.1), systemd-coredump
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
