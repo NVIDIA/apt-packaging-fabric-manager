@@ -1,5 +1,5 @@
 nv-fabricmanager                /usr/bin
-#nvswitch-audit                  /usr/bin
+nvswitch-audit                  /usr/bin
 
 nvidia-fabricmanager.service    /lib/systemd/system
 
