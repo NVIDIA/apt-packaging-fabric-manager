@@ -3,6 +3,5 @@ nvswitch-audit                  /usr/bin
 
 nvidia-fabricmanager.service    /lib/systemd/system
 
-dgx2_hgx2_topology              /usr/share/nvidia/nvswitch/
-dgxlr_hgxlr_topology            /usr/share/nvidia/nvswitch/
+*_topology                      /usr/share/nvidia/nvswitch/
 fabricmanager.cfg               /usr/share/nvidia/nvswitch/
