@@ -16,8 +16,33 @@ Description: Fabric Manager for NVSwitch based systems.
 Package: nvidia-fabricmanager-dev-#BRANCH#
 Architecture: amd64
 Depends: ${misc:Depends}
+# Normally we would have a dev package depend on its runtime package. However
+# FM isn't a normal package. All the libs are in the dev package, and the
+# runtime package is actually a service package.
 Provides: nvidia-fabricmanager-dev
 Replaces: nvidia-fabricmanager-dev
 Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
+
+Package: cuda-drivers-fabricmanager-#BRANCH#
+Architecture: amd64
+Depends: ${misc:Depends},
+ nvidia-fabricmanager-#BRANCH# (= #VERSION#),
+ cuda-drivers-#BRANCH# (= #VERSION#)
+Provides: cuda-drivers-fabricmanager-branch
+Replaces: cuda-drivers-fabricmanager-branch
+Conflicts: cuda-drivers-fabricmanager-branch
+Description: Meta-package for FM and Driver
+ Convenience meta-package for installing fabricmanager and the cuda-drivers
+ meta-package simultaneously while keeping version equivalence. This meta-
+ package is branch-specific.
+
+Package: cuda-drivers-fabricmanager
+Architecture: amd64
+Depends: ${misc:Depends},
+ cuda-drivers-fabricmanager-#BRANCH# (= #VERSION#)
+Description: Meta-package for FM and Driver
+ Convenience meta-package for installing fabricmanager and the cuda-drivers
+ meta-package simultaneously while keeping version equivalence. This meta-
+ package is across all driver branches.
