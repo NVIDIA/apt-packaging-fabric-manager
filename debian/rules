@@ -3,6 +3,7 @@
 DH_VERBOSE := 1
 
 VERSION         ?= 999
+BRANCH          ?= 999
 REVISION        ?= 1
 TIMESTAMP       := $(shell date -R)
 
@@ -25,8 +26,10 @@ fill_templates:
 	for template in debian/templates/*.in; do \
 		dest=`echo $$template | \
 		      sed -e "s|\.in\$$||" \
-		          -e "s|templates\/||"`; \
+		          -e "s|templates\/||" \
+		          -e "s|BRANCH|$(BRANCH)|"`; \
 		sed -e "s|#VERSION#|$(VERSION)|g" \
+		    -e "s|#BRANCH#|$(BRANCH)|g" \
 		    -e "s|#REVISION#|$(REVISION)|g" \
 		    -e "s|#TIMESTAMP#|$(TIMESTAMP)|g" \
 		    -e "s|#DEBLIBINSTDIR#|$(DEBLIBINSTDIR)|g" \

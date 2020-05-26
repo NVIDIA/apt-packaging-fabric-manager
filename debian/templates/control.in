@@ -4,14 +4,20 @@ Section: multiverse/devel
 Priority: optional
 Standards-Version: 3.8.0
 
-Package: nvidia-fabricmanager
+Package: nvidia-fabricmanager-#BRANCH#
 Architecture: amd64
 Depends: ${misc:Depends}, libc6 (>= 2.2.1), systemd-coredump
+Provides: nvidia-fabricmanager
+Replaces: nvidia-fabricmanager
+Conflicts: nvidia-fabricmanager
 Description: Fabric Manager for NVSwitch based systems.
  Fabric Manager for NVIDIA NVSwitch based systems.
 
-Package: nvidia-fabricmanager-dev
+Package: nvidia-fabricmanager-dev-#BRANCH#
 Architecture: amd64
 Depends: ${misc:Depends}
+Provides: nvidia-fabricmanager-dev
+Replaces: nvidia-fabricmanager-dev
+Conflicts: nvidia-fabricmanager-dev
 Description: Fabric Manager API headers and associated library
  Fabric Manager API headers and associated library
