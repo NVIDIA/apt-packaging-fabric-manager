@@ -28,8 +28,8 @@ Description: Fabric Manager API headers and associated library
 Package: cuda-drivers-fabricmanager-#BRANCH#
 Architecture: amd64
 Depends: ${misc:Depends},
- nvidia-fabricmanager-#BRANCH# (= #VERSION#),
- cuda-drivers-#BRANCH# (= #VERSION#)
+ nvidia-fabricmanager-#BRANCH# (= #VERSION#-1),
+ cuda-drivers-#BRANCH# (= #VERSION#-1)
 Provides: cuda-drivers-fabricmanager-branch
 Replaces: cuda-drivers-fabricmanager-branch
 Conflicts: cuda-drivers-fabricmanager-branch
@@ -41,7 +41,7 @@ Description: Meta-package for FM and Driver
 Package: cuda-drivers-fabricmanager
 Architecture: amd64
 Depends: ${misc:Depends},
- cuda-drivers-fabricmanager-#BRANCH# (= #VERSION#)
+ cuda-drivers-fabricmanager-#BRANCH# (= #VERSION#-1)
 Description: Meta-package for FM and Driver
  Convenience meta-package for installing fabricmanager and the cuda-drivers
  meta-package simultaneously while keeping version equivalence. This meta-
