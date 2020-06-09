@@ -6,7 +6,7 @@ Standards-Version: 3.8.0
 
 Package: nvidia-fabricmanager-#BRANCH#
 Architecture: amd64
-Depends: ${misc:Depends}, libc6 (>= 2.2.1), systemd-coredump
+Depends: ${misc:Depends}, libc6 (>= 2.2.1)
 Provides: nvidia-fabricmanager
 Replaces: nvidia-fabricmanager
 Conflicts: nvidia-fabricmanager
