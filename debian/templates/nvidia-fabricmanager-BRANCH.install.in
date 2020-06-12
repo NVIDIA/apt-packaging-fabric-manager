@@ -5,3 +5,6 @@ nvidia-fabricmanager.service    /lib/systemd/system
 
 *_topology                      /usr/share/nvidia/nvswitch/
 fabricmanager.cfg               /usr/share/nvidia/nvswitch/
+
+LICENSE                         /usr/share/doc/nvidia-fabricmanager/
+third-party-notices.txt         /usr/share/doc/nvidia-fabricmanager/
